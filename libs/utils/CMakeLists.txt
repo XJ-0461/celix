@@ -17,7 +17,7 @@
 
 celix_subproject(UTILS "Option to enable building the Utilities library" ON)
 if (UTILS)
-    find_package(libzip REQUIRED)
+    find_package(libzip CONFIG REQUIRED)
 
     set(MEMSTREAM_SOURCES )
     set(MEMSTREAM_INCLUDES )
